@@ -1,3 +1,6 @@
 SELECT SUM(Population) AS TotalPopulation
 FROM CITY
 WHERE CountryCode IN (SELECT Code FROM COUNTRY WHERE Continent = 'Asia');
+SELECT SUM(Population) AS TotalPopulation
+FROM CITY
+WHERE CountryCode IN (SELECT Code FROM COUNTRY WHERE Continent = 'Asia');
